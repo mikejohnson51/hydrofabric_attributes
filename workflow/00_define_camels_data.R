@@ -11,7 +11,7 @@ files = files[!grepl("readme", files)]
 camels   = Reduce(function(x, y) merge(x, y, by = "gauge_id", all = TRUE), lapply(files, fread)) |>
   mutate(gauge_id = sprintf("%08d", gauge_id))
 
-frame_subset = camels  = read.csv('https://raw.githubusercontent.com/jmframe/lstm/master/data/camels_basin_list_516.txt', header = FALSE) %>%
+frame_subset = read.csv('https://raw.githubusercontent.com/jmframe/lstm/master/data/camels_basin_list_516.txt', header = FALSE) %>%
     mutate(gauge_id = sprintf("%08d", V1)) %>%
     mutate(V1 = NULL)
 
