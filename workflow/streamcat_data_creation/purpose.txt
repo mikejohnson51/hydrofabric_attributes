@@ -1,0 +1,5 @@
+Collect StreamCAT data from:
+
+Hydroregions: https://gaftp.epa.gov/epadatacommons/ORD/NHDPlusLandscapeAttributes/StreamCat/HydroRegions/
+
+
