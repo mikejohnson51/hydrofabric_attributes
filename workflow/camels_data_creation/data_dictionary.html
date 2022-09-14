@@ -367,340 +367,438 @@ pre code {
 
 <table>
 <colgroup>
-<col width="13%" />
-<col width="23%" />
-<col width="14%" />
-<col width="30%" />
+<col width="3%" />
+<col width="5%" />
+<col width="35%" />
+<col width="18%" />
+<col width="9%" />
 <col width="17%" />
+<col width="8%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Class</th>
 <th>Variable</th>
-<th>Description</th>
+<th>Data Description</th>
+<th>Data Source</th>
 <th>Summary Function Description</th>
 <th>Proposed Source</th>
+<th>Proposed Summary</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>identifier</td>
 <td>gauge_id</td>
-<td></td>
-<td></td>
-<td></td>
+<td>catchment identifier (eight-digit USGS hydrologic unit code)</td>
+<td>HDCN-2009</td>
+<td>NA</td>
+<td>Reference Fabric POIs</td>
+<td>NA</td>
 </tr>
 <tr class="even">
-<td>identifier</td>
-<td>COMID</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
 <td>identifier</td>
 <td>HUC2</td>
-<td></td>
-<td></td>
-<td></td>
+<td>region (two-digit USGS hydrologic unit code)</td>
+<td>NHDPlusV2/WBD</td>
+<td>NA</td>
+<td>Reference Fabric VPUs</td>
+<td>VPU</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>identifier</td>
 <td>gauge_name</td>
-<td></td>
-<td></td>
-<td></td>
+<td>gauge name, followed by the state</td>
+<td>HDCN-2009</td>
+<td>NA</td>
+<td>Mainstem ID</td>
+<td>NA</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>identifier</td>
 <td>gauge_lat</td>
-<td></td>
-<td></td>
-<td></td>
+<td>gauge latitude</td>
+<td>HDCN-2009</td>
+<td>NA</td>
+<td>Outlet X</td>
+<td>NA</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>identifier</td>
 <td>gauge_long</td>
-<td></td>
-<td></td>
-<td></td>
+<td>gauge longitude</td>
+<td>HDCN-2009</td>
+<td>NA</td>
+<td>Outlet Y</td>
+<td>NA</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>climatology</td>
 <td>p_mean</td>
-<td></td>
-<td></td>
-<td></td>
+<td>mean daily precipitation (mm/day)</td>
+<td>N15 Daymet 1km Daily October 1989 to 30 September 2009</td>
+<td>basin mean</td>
+<td>Gridmet 4km PR</td>
+<td>basin mean</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>climatology</td>
 <td>pet_mean</td>
-<td></td>
-<td></td>
-<td></td>
+<td>mean daily PET</td>
+<td>N15 using Priestley–Taylor formulation calibrated for each
+catchment</td>
+<td>basin mean</td>
+<td>Gridmet 4km PET</td>
+<td>basin mean</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>climatology</td>
 <td>p_seasonality</td>
+<td>seasonality and timing of precipitation (estimated using sine curves
+to represent the annual temperature and precipitation cycles)</td>
+<td>N15 Daymet 1km Daily</td>
+<td>Eq. (14) in Woods et al. (2009)</td>
 <td></td>
-<td></td>
-<td></td>
+<td>Eq. (14) in Woods et al. (2009)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>climatology</td>
 <td>frac_snow</td>
-<td></td>
-<td></td>
-<td></td>
+<td>fraction of precipitation falling as snow (i.e., on days colder than
+0)</td>
+<td>N15 Daymet 1km Daily</td>
+<td>basin mean</td>
+<td>Gridmet 4km PR / Jennings</td>
+<td>basin mean</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>climatology</td>
 <td>aridity</td>
-<td></td>
-<td></td>
-<td></td>
+<td>aridity (ratio of mean PET to mean precipitation)</td>
+<td>N15 Daymet 1km Daily
+[<code>pet_mean</code>/<code>p_mean</code>]</td>
+<td>basin mean</td>
+<td>Gridmet 4km Daily</td>
+<td>basin mean</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>climatology</td>
 <td>high_prec_freq</td>
-<td></td>
-<td></td>
-<td></td>
+<td>frequency of high precipitation days (greater or equal to 5 times
+mean daily PPT); days/yr</td>
+<td>N15 Daymet 1km Daily</td>
+<td>basin mean</td>
+<td>Gridmet 4km Daily</td>
+<td>basin mean</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>climatology</td>
 <td>high_prec_dur</td>
-<td></td>
-<td></td>
-<td></td>
+<td>average duration of high precipitation days (greater or equal to 5
+times mean daily PPT); days</td>
+<td>N15 Daymet 1km Daily</td>
+<td>basin mean</td>
+<td>Gridmet 4km Daily</td>
+<td>basin mean</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>climatology</td>
 <td>high_prec_timing</td>
-<td></td>
-<td></td>
-<td></td>
+<td>season during which most high precipitation days (greater or equal
+to 5 times mean daily PPT); season</td>
+<td>N15 Daymet 1km Daily</td>
+<td>basin mean</td>
+<td>Gridmet 4km Daily</td>
+<td>basin mean</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>climatology</td>
 <td>low_prec_freq</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>climatology</td>
-<td>low_prec_dur</td>
-<td></td>
-<td></td>
-<td></td>
+<td>frequency of low precipitation days (less them 1 mm daily PPT);
+days/yr</td>
+<td>N15 Daymet 1km Daily</td>
+<td>basin mean</td>
+<td>Gridmet 4km Daily</td>
+<td>basin mean</td>
 </tr>
 <tr class="odd">
 <td>climatology</td>
-<td>low_prec_timing</td>
-<td></td>
-<td></td>
-<td></td>
+<td>low_prec_dur</td>
+<td>average duration of low precipitation days (less them 1 mm daily
+PPT); days</td>
+<td>N15 Daymet 1km Daily</td>
+<td>basin mean</td>
+<td>Gridmet 4km Daily</td>
+<td>basin mean</td>
 </tr>
 <tr class="even">
+<td>climatology</td>
+<td>low_prec_timing</td>
+<td>season during which most low precipitation days (less them 1 mm
+daily PPT); season</td>
+<td>N15 Daymet 1km Daily
+[<code>pet_mean</code>/<code>p_mean</code>]</td>
+<td>basin mean</td>
+<td>Gridmet 4km Daily</td>
+<td>basin mean</td>
+</tr>
+<tr class="odd">
 <td>geology</td>
 <td>geol_1st_class</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>geology</td>
 <td>glim_1st_class_frac</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>geology</td>
 <td>geol_2nd_class</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>geology</td>
 <td>glim_2nd_class_frac</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>geology</td>
 <td>carbonate_rocks_frac</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>geology</td>
 <td>geol_porostiy</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>geology</td>
 <td>geol_permeability</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>soils</td>
 <td>soil_depth_pelletier</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>soils</td>
 <td>soil_depth_statsgo</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>soils</td>
 <td>soil_porosity</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>soils</td>
 <td>soil_conductivity</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>soils</td>
 <td>max_water_content</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>soils</td>
 <td>sand_frac</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>soils</td>
 <td>silt_frac</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>soils</td>
 <td>clay_frac</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>soils</td>
 <td>water_frac</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>soils</td>
 <td>organic_frac</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>soils</td>
 <td>other_frac</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>soils</td>
 <td>root_depth_50</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>soils</td>
 <td>root_depth_99</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>terrain</td>
 <td>area</td>
 <td></td>
 <td></td>
 <td></td>
-</tr>
-<tr class="odd">
-<td>terrain</td>
-<td>slope_mean</td>
-<td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="even">
 <td>terrain</td>
-<td>elev_mean</td>
+<td>slope_mean</td>
+<td>catchment mean slope</td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="odd">
+<td>terrain</td>
+<td>elev_mean</td>
+<td>catchment mean elevation</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
 <td>landcover</td>
 <td>frac_forest</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>landcover</td>
 <td>dom_land_cover</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>landcover</td>
 <td>lai_max</td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>landcover</td>
+<td>lai_diff</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>landcover</td>
-<td>lai_diff</td>
+<td>gvf_max</td>
+<td></td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>landcover</td>
-<td>gvf_max</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>landcover</td>
 <td>gvf_diff</td>
+<td></td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
