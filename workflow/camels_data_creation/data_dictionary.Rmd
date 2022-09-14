@@ -1,52 +1,52 @@
-|Class        | Variable             |  Description | Summary Function Description | Proposed Source | 
-|-------------|----------------------|--------------|----------------------------- |-----------------|
-| identifier  | gauge_id             ||||
-| identifier  | COMID                ||||
-| identifier  | HUC2                 ||||
-| identifier  | gauge_name           ||||
-| identifier  | gauge_lat            ||||
-| identifier  | gauge_long           ||||
-| climatology | p_mean               ||||
-| climatology | pet_mean             ||||
-| climatology | p_seasonality        ||||
-| climatology | frac_snow            ||||
-| climatology | aridity              ||||
-| climatology | high_prec_freq       ||||
-| climatology | high_prec_dur        ||||
-| climatology | high_prec_timing     ||||
-| climatology | low_prec_freq        ||||
-| climatology | low_prec_dur         ||||
-| climatology | low_prec_timing      ||||
-| geology     | geol_1st_class       ||||
-| geology     | glim_1st_class_frac  ||||
-| geology     | geol_2nd_class       ||||
-| geology     | glim_2nd_class_frac  ||||
-| geology     | carbonate_rocks_frac ||||
-| geology     | geol_porostiy        ||||
-| geology     | geol_permeability    ||||
-| soils       | soil_depth_pelletier ||||
-| soils       | soil_depth_statsgo   ||||
-| soils       | soil_porosity        ||||
-| soils       | soil_conductivity    ||||
-| soils       | max_water_content    ||||
-| soils       | sand_frac            ||||
-| soils       | silt_frac            ||||
-| soils       | clay_frac            ||||
-| soils       | water_frac           ||||
-| soils       | organic_frac         ||||
-| soils       | other_frac           ||||
-| soils       | root_depth_50        ||||
-| soils       | root_depth_99        ||||
-| terrain     | area                 ||||
-| terrain     | slope_mean           ||||
-| terrain     | elev_mean            ||||
-| landcover   | frac_forest          ||||
-| landcover   | dom_land_cover       ||||
-| landcover   | lai_max              ||||
-| landcover   | lai_diff             ||||
-| landcover   | gvf_max              ||||
-| landcover   | gvf_diff             ||||
-  
+|Class        | Variable             |  Data Description | Data Source |Summary Function Description | Proposed Source | Proposed Summary | 
+|-------------|----------------------|-------------------|-------------|-----------------------------|-----------------|-----------------|
+| identifier  | gauge_id             | catchment identifier (eight-digit USGS hydrologic unit code)|||||
+| identifier  | COMID                ||||||
+| identifier  | HUC2                 | region (two-digit USGS hydrologic unit code) |||||
+| identifier  | gauge_name           ||||||
+| identifier  | gauge_lat            ||||||
+| identifier  | gauge_long           ||||||
+| climatology | p_mean               ||||||
+| climatology | pet_mean             ||||||
+| climatology | p_seasonality        ||||||
+| climatology | frac_snow            ||||||
+| climatology | aridity              ||||||
+| climatology | high_prec_freq       ||||||
+| climatology | high_prec_dur        ||||||
+| climatology | high_prec_timing     ||||||
+| climatology | low_prec_freq        ||||||
+| climatology | low_prec_dur         ||||||
+| climatology | low_prec_timing      ||||||
+| geology     | geol_1st_class       ||||||
+| geology     | glim_1st_class_frac  ||||||
+| geology     | geol_2nd_class       ||||||
+| geology     | glim_2nd_class_frac  ||||||
+| geology     | carbonate_rocks_frac ||||||
+| geology     | geol_porostiy        ||||||
+| geology     | geol_permeability    ||||||
+| soils       | soil_depth_pelletier ||||||
+| soils       | soil_depth_statsgo   ||||||
+| soils       | soil_porosity        ||||||
+| soils       | soil_conductivity    ||||||
+| soils       | max_water_content    ||||||
+| soils       | sand_frac            ||||||
+| soils       | silt_frac            ||||||
+| soils       | clay_frac            ||||||
+| soils       | water_frac           ||||||
+| soils       | organic_frac         ||||||
+| soils       | other_frac           ||||||
+| soils       | root_depth_50        ||||||
+| soils       | root_depth_99        ||||||
+| terrain     | area                 ||||||
+| terrain     | slope_mean           ||||||
+| terrain     | elev_mean            ||||||
+| landcover   | frac_forest          ||||||
+| landcover   | dom_land_cover       ||||||
+| landcover   | lai_max              ||||||
+| landcover   | lai_diff             ||||||
+| landcover   | gvf_max              ||||||
+| landcover   | gvf_diff             ||||||
+  ||
 
 
 
