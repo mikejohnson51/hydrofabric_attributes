@@ -1,25 +1,3 @@
-
-| Class       | Variable             |  Data Description | Data Source |Summary Function Description | Proposed Source | Proposed Summary | 
-|-------------|----------------------|-------------------|-------------|-----------------------------|-----------------|-----------------|
-| identifier  | gauge_id             | catchment identifier (eight-digit USGS hydrologic unit code)|||||
-| identifier  | COMID                ||||||
-| identifier  | HUC2                 | region (two-digit USGS hydrologic unit code) |||||
-| identifier  | gauge_name           ||||||
-| identifier  | gauge_lat            ||||||
-| identifier  | gauge_long           ||||||
-| climatology | p_mean               ||||||
-| climatology | pet_mean             ||||||
-| climatology | p_seasonality        ||||||
-| climatology | frac_snow            ||||||
-| climatology | aridity              ||||||
-| climatology | high_prec_freq       ||||||
-| climatology | high_prec_dur        ||||||
-| climatology | high_prec_timing     ||||||
-| climatology | low_prec_freq        ||||||
-| climatology | low_prec_dur         ||||||
-| climatology | low_prec_timing      ||||||
-| geology     | geol_1st_class       | most common geologic class in the catchment |GLiM|Hartmann and Moosdorf (2012)|||
-
 | Class       | Variable             |  Data Description                                                                                                                 | Data Source                                                          | Summary Function Description       | Proposed Source                                                | Proposed Summary                | 
 |-------------|----------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------|----------------------------------------------------------------|---------------------------------|
 | identifier  | gauge_id             | catchment identifier (eight-digit USGS hydrologic unit code)                                                                      | HDCN-2009                                                            | NA                                 | Reference Fabric POIs                                          | NA                              |
@@ -38,15 +16,13 @@
 | climatology | low_prec_freq        | frequency of low precipitation days (less them 1 mm daily PPT); days/yr                                                           | N15 Daymet 1km Daily                                                 | basin mean                         | Gridmet  4km Daily                                             | basin mean                      |
 | climatology | low_prec_dur         | average duration of low precipitation days (less them 1 mm daily PPT);  days                                                      | N15 Daymet 1km Daily                                                 | basin mean                         | Gridmet  4km Daily                                             | basin mean                      | 
 | climatology | low_prec_timing      | season during which most low precipitation days (less them 1 mm daily PPT); season                                                | N15 Daymet 1km Daily [`pet_mean`/`p_mean`]                           | basin mean                         | Gridmet  4km Daily                                             | basin mean                      |
-| geology     | geol_1st_class       ||||||
-
-| geology     | glim_1st_class_frac  ||||||
-| geology     | geol_2nd_class       ||||||
-| geology     | glim_2nd_class_frac  ||||||
-| geology     | carbonate_rocks_frac ||||||
-| geology     | geol_porostiy        ||||||
-| geology     | geol_permeability    ||||||
-
+| geology     | geol_1st_class       |most common geologic class in the catchment|Hartmann and Moosdorf (2012)|GLiM|||
+| geology     | glim_1st_class_frac  |fraction of the catchment area associated with its most common geologic class|Hartmann and Moosdorf (2012)|GLiM|||
+| geology     | geol_2nd_class       |second most common geologic class in the catchment|Hartmann and Moosdorf (2012)|GLiM|||
+| geology     | glim_2nd_class_frac  |fraction of the catchment area associated with its second most common geologic class|Hartmann and Moosdorf (2012)|GLiM|||
+| geology     | carbonate_rocks_frac |fraction of the catchment area characterized as “carbonate sedimentary rocks”|Hartmann and Moosdorf (2012)|GLiM|||
+| geology     | geol_porostiy        |subsurface porosity|Gleeson et al. (2014)|GLHYMPS|||
+| geology     | geol_permeability    |subsurface permeability (log10)|Gleeson et al. (2014)|GLHYMPS|||
 | soils       | soil_depth_pelletier | depth to bedrock (maximum 50 m) | Pelletier et al. (2016) ||||
 | soils       | soil_depth_statsgo   | soil depth (maximum 1.5 m; layers marked as water and bedrock were excluded) | Miller and White (1998) – STATSGO*||||
 | soils       | soil_porosity        | volumetric porosity (saturated volumetric water content estimated using a multiple linear regression based on sand and clay fraction for the layers marked as USDA soil texture class and a default value (0.9) for layers marked as organic material; layers marked as water, bedrock, and “other” were excluded) | Miller and White (1998) – STATSGO | Table 4 in Cosby etal. (1984); Lawrence and Slater (2008)|||
@@ -59,8 +35,8 @@
 | soils       | organic_frac         | fraction of soil_depth_statsgo marked as organic material (class 13) |||||
 | soils       | other_frac           | fraction of soil_depth_statsgo marked as “other” (class 16)|||||
 | terrain     | area                 ||||||
-| terrain     | slope_mean           ||||||
-| terrain     | elev_mean            ||||||
+| terrain     | slope_mean           | catchment mean slope |||||
+| terrain     | elev_mean            |catchment mean elevation|||||
 | landcover   | frac_forest          | forest fraction | N15 – USGS data ||||
 | landcover   | dom_land_cover       | dominant land cover (Noah-modified 20-category IGBP-MODIS land cover) | MODIS*||||
 | landcover   | dom_land_cover_frac  | fraction of the catchment area associated with the dominant land cover | MODIS*||||
@@ -68,30 +44,7 @@
 | landcover   | lai_diff             | difference between the maximum and minimum monthly mean of the leaf area index (based on 12 monthly means)|||||
 | landcover   | gvf_max              | maximum monthly mean of the green vegetation frac tion (based on 12 monthly means) |||||
 | landcover   | gvf_diff             | difference between the maximum and minimum monthly mean of the green vegetation fraction (based on 12 monthly means)|||||
-| landcover  | root_depth_XX | root depth percentiles (XX = 50 and 99%) | Root depth extracted from a root depth distribution based on IGBP landcover) MODIS* Eq. (2) and Table 2 in Zeng (2001)
-
-| soils       | soil_depth_pelletier |||||| 
-| soils       | soil_depth_statsgo   ||||||
-| soils       | soil_porosity        ||||||
-| soils       | soil_conductivity    ||||||
-| soils       | max_water_content    ||||||
-| soils       | sand_frac            ||||||
-| soils       | silt_frac            ||||||
-| soils       | clay_frac            ||||||
-| soils       | water_frac           ||||||
-| soils       | organic_frac         ||||||
-| soils       | other_frac           ||||||
-| soils       | root_depth_50        ||||||
-| soils       | root_depth_99        ||||||
-| terrain     | area                 ||||||
-| terrain     | slope_mean           | catchment mean slope     |||||
-| terrain     | elev_mean            | catchment mean elevation |||||
-| landcover   | frac_forest          ||||||
-| landcover   | dom_land_cover       ||||||
-| landcover   | lai_max              ||||||
-| landcover   | lai_diff             ||||||
-| landcover   | gvf_max              ||||||
-| landcover   | gvf_diff             ||||||
+| landcover   | root_depth_XX | root depth percentiles (XX = 50 and 99%) | Root depth extracted from a root depth distribution based on IGBP landcover) MODIS* Eq. (2) and Table 2 in Zeng (2001)
 
 
 
