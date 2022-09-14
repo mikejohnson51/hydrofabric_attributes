@@ -34,9 +34,9 @@
 | soils       | water_frac           | fraction of the top 1.5 m marked as water (class 14) |||||
 | soils       | organic_frac         | fraction of soil_depth_statsgo marked as organic material (class 13) |||||
 | soils       | other_frac           | fraction of soil_depth_statsgo marked as “other” (class 16)|||||
-| terrain     | area                 ||||||
+| terrain     | area                 | |||||
 | terrain     | slope_mean           | catchment mean slope |||||
-| terrain     | elev_mean            |catchment mean elevation|||||
+| terrain     | elev_mean            | catchment mean elevation|||||
 | landcover   | frac_forest          | forest fraction | N15 – USGS data ||||
 | landcover   | dom_land_cover       | dominant land cover (Noah-modified 20-category IGBP-MODIS land cover) | MODIS*||||
 | landcover   | dom_land_cover_frac  | fraction of the catchment area associated with the dominant land cover | MODIS*||||
