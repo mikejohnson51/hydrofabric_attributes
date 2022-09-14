@@ -1,4 +1,4 @@
-|Class        | Variable             |  Data Description | Data Source |Summary Function Description | Proposed Source | Proposed Summary | 
+| Class       | Variable             |  Data Description | Data Source |Summary Function Description | Proposed Source | Proposed Summary | 
 |-------------|----------------------|-------------------|-------------|-----------------------------|-----------------|-----------------|
 | identifier  | gauge_id             | catchment identifier (eight-digit USGS hydrologic unit code)|||||
 | identifier  | COMID                ||||||
@@ -17,36 +17,35 @@
 | climatology | low_prec_freq        ||||||
 | climatology | low_prec_dur         ||||||
 | climatology | low_prec_timing      ||||||
-| geology     | geol_1st_class       ||||||
+| geology     | geol_1st_class       | most common geologic class in the catchment |GLiM|Hartmann and Moosdorf (2012)|||
 | geology     | glim_1st_class_frac  ||||||
 | geology     | geol_2nd_class       ||||||
 | geology     | glim_2nd_class_frac  ||||||
 | geology     | carbonate_rocks_frac ||||||
 | geology     | geol_porostiy        ||||||
 | geology     | geol_permeability    ||||||
-| soils       | soil_depth_pelletier ||||||
-| soils       | soil_depth_statsgo   ||||||
-| soils       | soil_porosity        ||||||
-| soils       | soil_conductivity    ||||||
-| soils       | max_water_content    ||||||
-| soils       | sand_frac            ||||||
-| soils       | silt_frac            ||||||
-| soils       | clay_frac            ||||||
-| soils       | water_frac           ||||||
-| soils       | organic_frac         ||||||
-| soils       | other_frac           ||||||
-| soils       | root_depth_50        ||||||
-| soils       | root_depth_99        ||||||
+| soils       | soil_depth_pelletier | depth to bedrock (maximum 50 m) | Pelletier et al. (2016) ||||
+| soils       | soil_depth_statsgo   | soil depth (maximum 1.5 m; layers marked as water and bedrock were excluded) | Miller and White (1998) – STATSGO*||||
+| soils       | soil_porosity        | volumetric porosity (saturated volumetric water content estimated using a multiple linear regression based on sand and clay fraction for the layers marked as USDA soil texture class and a default value (0.9) for layers marked as organic material; layers marked as water, bedrock, and “other” were excluded) | Miller and White (1998) – STATSGO | Table 4 in Cosby etal. (1984); Lawrence and Slater (2008)|||
+| soils       | soil_conductivity    | saturated hydraulic conductivity (estimated using a multiple linear regression based on sand and clay fraction for the layers marked as USDA soil texture class and a default value (36 cm h) | Miller and White (1998) – STATSGO | Table 4 in Cosby etal. (1984); Lawrence and Slater (2008)|||
+| soils       | max_water_content    | maximum water content (combination of porosity and soil_depth_statsgo; layers marked as water, bedrock, and “other” were excluded) | Miller and White (1998) – STATSGO ||||
+| soils       | sand_frac            | sand fraction (of the soil material smaller than 2 mm;layers marked as organic material, water, bedrock, and “other” were excluded) | Miller and White (1998) – STATSGO ||||
+| soils       | silt_frac            | silt fraction (of the soil material smaller than 2 mm;layers marked as organic material, water, bedrock, and “other” were excluded) | Miller and White (1998) – STATSGO ||||
+| soils       | clay_frac            | clay fraction (of the soil material smaller than 2 mm; layers marked as organic material, water, bedrock, and “other” were excluded) | Miller and White (1998) – STATSGO ||||
+| soils       | water_frac           | fraction of the top 1.5 m marked as water (class 14) |||||
+| soils       | organic_frac         | fraction of soil_depth_statsgo marked as organic material (class 13) |||||
+| soils       | other_frac           | fraction of soil_depth_statsgo marked as “other” (class 16)|||||
 | terrain     | area                 ||||||
 | terrain     | slope_mean           ||||||
 | terrain     | elev_mean            ||||||
-| landcover   | frac_forest          ||||||
-| landcover   | dom_land_cover       ||||||
-| landcover   | lai_max              ||||||
-| landcover   | lai_diff             ||||||
-| landcover   | gvf_max              ||||||
-| landcover   | gvf_diff             ||||||
-  ||
+| landcover   | frac_forest          | forest fraction | N15 – USGS data ||||
+| landcover   | dom_land_cover       | dominant land cover (Noah-modified 20-category IGBP-MODIS land cover) | MODIS*||||
+| landcover   | dom_land_cover_frac  | fraction of the catchment area associated with the dominant land cover | MODIS*||||
+| landcover   | lai_max              | maximum monthly mean of the leaf area index (based on 12 monthly means) ||||
+| landcover   | lai_diff             | difference between the maximum and minimum monthly mean of the leaf area index (based on 12 monthly means)|||||
+| landcover   | gvf_max              | maximum monthly mean of the green vegetation frac tion (based on 12 monthly means) |||||
+| landcover   | gvf_diff             | difference between the maximum and minimum monthly mean of the green vegetation fraction (based on 12 monthly means)|||||
+| landcover  | root_depth_XX | root depth percentiles (XX = 50 and 99%) | Root depth extracted from a root depth distribution based on IGBP landcover) MODIS* Eq. (2) and Table 2 in Zeng (2001)
 
 
 
