@@ -1,6 +1,8 @@
-rmarkdown::render('workflow/camels_data_creation/data_dictionary.Rmd')
+pacman::p_load(rmarkdown, fs)
 
-fs::file_move('workflow/camels_data_creation/data_dictionary.html',
-              'docs/data_dictionary.html')
+render('workflow/camels_data_creation/data_dictionary.Rmd')
 
-rmarkdown::render('docs/index.Rmd')
+file_move('workflow/camels_data_creation/data_dictionary.html',
+          'docs/data_dictionary.html')
+
+render('docs/index.Rmd')
