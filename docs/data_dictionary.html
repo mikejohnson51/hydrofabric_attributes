@@ -365,6 +365,10 @@ pre code {
 </div>
 
 
+<div id="proposed-basin-attribute-workflows" class="section level1">
+<h1>Proposed basin attribute workflows</h1>
+<div id="id" class="section level2">
+<h2>ID</h2>
 <table>
 <colgroup>
 <col width="2%" />
@@ -395,9 +399,9 @@ pre code {
 <td>catchment identifier (eight-digit USGS hydrologic unit code)</td>
 <td>HDCN-2009</td>
 <td>-</td>
-<td>NA</td>
+<td>-</td>
 <td>Reference Fabric POIs</td>
-<td>NA</td>
+<td>-</td>
 </tr>
 <tr class="even">
 <td>identifier</td>
@@ -405,7 +409,7 @@ pre code {
 <td>region (two-digit USGS hydrologic unit code)</td>
 <td>NHDPlusV2/WBD</td>
 <td>-</td>
-<td>NA</td>
+<td>-</td>
 <td>Reference Fabric VPUs</td>
 <td>VPU</td>
 </tr>
@@ -415,9 +419,9 @@ pre code {
 <td>gauge name, followed by the state</td>
 <td>HDCN-2009</td>
 <td>-</td>
-<td>NA</td>
+<td>-</td>
 <td>Mainstem ID</td>
-<td>NA</td>
+<td>-</td>
 </tr>
 <tr class="even">
 <td>identifier</td>
@@ -425,9 +429,9 @@ pre code {
 <td>gauge latitude</td>
 <td>HDCN-2009</td>
 <td>-</td>
-<td>NA</td>
+<td>-</td>
 <td>Outlet X</td>
-<td>NA</td>
+<td>-</td>
 </tr>
 <tr class="odd">
 <td>identifier</td>
@@ -435,11 +439,40 @@ pre code {
 <td>gauge longitude</td>
 <td>HDCN-2009</td>
 <td>-</td>
-<td>NA</td>
+<td>-</td>
 <td>Outlet Y</td>
-<td>NA</td>
+<td>-</td>
 </tr>
-<tr class="even">
+</tbody>
+</table>
+</div>
+<div id="climatology" class="section level2">
+<h2>Climatology</h2>
+<table>
+<colgroup>
+<col width="2%" />
+<col width="4%" />
+<col width="20%" />
+<col width="16%" />
+<col width="1%" />
+<col width="33%" />
+<col width="14%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Class</th>
+<th>Variable</th>
+<th>Data Description</th>
+<th>Data Source</th>
+<th>units</th>
+<th>Summary Function Description</th>
+<th>Proposed Source</th>
+<th>Proposed Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
 <td>climatology</td>
 <td>p_mean</td>
 <td>mean daily precipitation</td>
@@ -449,7 +482,7 @@ pre code {
 <td>Gridmet 4km PR</td>
 <td>basin mean</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>climatology</td>
 <td>pet_mean</td>
 <td>mean daily PET</td>
@@ -460,7 +493,7 @@ catchment</td>
 <td>Gridmet 4km PET</td>
 <td>basin mean</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>climatology</td>
 <td>p_seasonality</td>
 <td>seasonality and timing of precipitation</td>
@@ -471,7 +504,7 @@ precipitation cycles w/ Eq. (14) in Woods et al. (2009)</td>
 <td>Gridmet 4km Daily</td>
 <td>Eq. (14) in Woods et al. (2009)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>climatology</td>
 <td>frac_snow</td>
 <td>fraction of precipitation falling as snow</td>
@@ -481,7 +514,7 @@ precipitation cycles w/ Eq. (14) in Woods et al. (2009)</td>
 <td>Gridmet 4km PR / Jennings</td>
 <td>basin mean</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>climatology</td>
 <td>aridity</td>
 <td>aridity</td>
@@ -492,7 +525,7 @@ precipitation cycles w/ Eq. (14) in Woods et al. (2009)</td>
 <td>Gridmet 4km Daily</td>
 <td>basin mean</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>climatology</td>
 <td>high_prec_freq</td>
 <td>frequency of high precipitation days</td>
@@ -502,7 +535,7 @@ precipitation cycles w/ Eq. (14) in Woods et al. (2009)</td>
 <td>Gridmet 4km Daily</td>
 <td>basin mean</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>climatology</td>
 <td>high_prec_dur</td>
 <td>average duration of high precipitation days</td>
@@ -512,7 +545,7 @@ precipitation cycles w/ Eq. (14) in Woods et al. (2009)</td>
 <td>Gridmet 4km Daily</td>
 <td>basin mean</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>climatology</td>
 <td>high_prec_timing</td>
 <td>season during which most high precipitation days</td>
@@ -522,7 +555,7 @@ precipitation cycles w/ Eq. (14) in Woods et al. (2009)</td>
 <td>Gridmet 4km Daily</td>
 <td>basin mean</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>climatology</td>
 <td>low_prec_freq</td>
 <td>frequency of low precipitation days</td>
@@ -532,7 +565,7 @@ precipitation cycles w/ Eq. (14) in Woods et al. (2009)</td>
 <td>Gridmet 4km Daily</td>
 <td>basin mean</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>climatology</td>
 <td>low_prec_dur</td>
 <td>average duration of low precipitation days</td>
@@ -542,7 +575,7 @@ precipitation cycles w/ Eq. (14) in Woods et al. (2009)</td>
 <td>Gridmet 4km Daily</td>
 <td>basin mean</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>climatology</td>
 <td>low_prec_timing</td>
 <td>season during which most low precipitation days</td>
@@ -553,15 +586,44 @@ precipitation cycles w/ Eq. (14) in Woods et al. (2009)</td>
 <td>Gridmet 4km Daily</td>
 <td>basin mean</td>
 </tr>
+</tbody>
+</table>
+</div>
+<div id="geology" class="section level2">
+<h2>Geology</h2>
+<table>
+<colgroup>
+<col width="2%" />
+<col width="4%" />
+<col width="20%" />
+<col width="16%" />
+<col width="1%" />
+<col width="33%" />
+<col width="14%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Class</th>
+<th>Variable</th>
+<th>Data Description</th>
+<th>Data Source</th>
+<th>units</th>
+<th>Summary Function Description</th>
+<th>Proposed Source</th>
+<th>Proposed Summary</th>
+</tr>
+</thead>
+<tbody>
 <tr class="odd">
 <td>geology</td>
 <td>geol_1st_class</td>
 <td>most common geologic class in the catchment</td>
 <td>Hartmann and Moosdorf (2012) - GLiM</td>
 <td>-</td>
-<td>NA</td>
-<td></td>
-<td></td>
+<td>basin mean</td>
+<td>CONUS Soils</td>
+<td>basin mean</td>
 </tr>
 <tr class="even">
 <td>geology</td>
@@ -570,9 +632,9 @@ precipitation cycles w/ Eq. (14) in Woods et al. (2009)</td>
 geologic class</td>
 <td>Hartmann and Moosdorf (2012) - GLiM</td>
 <td>%</td>
-<td>NA</td>
-<td>GLiM</td>
-<td></td>
+<td>basin mean</td>
+<td>CONUS Soils</td>
+<td>basin mean</td>
 </tr>
 <tr class="odd">
 <td>geology</td>
@@ -580,9 +642,9 @@ geologic class</td>
 <td>second most common geologic class in the catchment</td>
 <td>Hartmann and Moosdorf (2012) - GLiM</td>
 <td>-</td>
-<td>NA</td>
-<td>GLiM</td>
-<td></td>
+<td>basin mean</td>
+<td>CONUS Soils</td>
+<td>basin mean</td>
 </tr>
 <tr class="even">
 <td>geology</td>
@@ -591,9 +653,9 @@ geologic class</td>
 common geologic class</td>
 <td>Hartmann and Moosdorf (2012) - GLiM</td>
 <td>%</td>
-<td>NA</td>
-<td>GLiM</td>
-<td></td>
+<td>basin mean</td>
+<td>CONUS Soils</td>
+<td>basin mean</td>
 </tr>
 <tr class="odd">
 <td>geology</td>
@@ -602,9 +664,9 @@ common geologic class</td>
 sedimentary rocks”</td>
 <td>Hartmann and Moosdorf (2012) - GLiM</td>
 <td>%</td>
-<td>NA</td>
-<td>GLiM</td>
-<td></td>
+<td>basin mean</td>
+<td>CONUS Soils</td>
+<td>basin mean</td>
 </tr>
 <tr class="even">
 <td>geology</td>
@@ -613,8 +675,8 @@ sedimentary rocks”</td>
 <td>Gleeson et al. (2014)</td>
 <td>GLHYMPS</td>
 <td>-</td>
-<td>NA</td>
-<td>GLHYMPS</td>
+<td>basin mean</td>
+<td>CONUS Soils</td>
 </tr>
 <tr class="odd">
 <td>geology</td>
@@ -623,339 +685,236 @@ sedimentary rocks”</td>
 <td>Gleeson et al. (2014)</td>
 <td>GLHYMPS</td>
 <td>sq. m</td>
-<td>basin Geometric mean</td>
-<td>GLHYMPS</td>
+<td>basin geometric mean</td>
+<td>CONUS Soils</td>
 </tr>
-<tr class="even">
+</tbody>
+</table>
+</div>
+<div id="soils" class="section level2">
+<h2>Soils</h2>
+<table>
+<colgroup>
+<col width="2%" />
+<col width="4%" />
+<col width="20%" />
+<col width="16%" />
+<col width="1%" />
+<col width="33%" />
+<col width="14%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Class</th>
+<th>Variable</th>
+<th>Data Description</th>
+<th>Data Source</th>
+<th>units</th>
+<th>Summary Function Description</th>
+<th>Proposed Source</th>
+<th>Proposed Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
 <td>soils</td>
 <td>soil_depth_pelletier</td>
 <td>depth to bedrock (maximum 50 m)</td>
 <td>Pelletier et al. (2016)</td>
 <td>m</td>
-<td>NA</td>
-<td></td>
-<td></td>
+<td>basin mean</td>
+<td>CONUS Soils</td>
+<td>basin mean</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>soils</td>
 <td>soil_depth_statsgo</td>
 <td>soil depth</td>
 <td>Miller and White (1998) – STATSGO</td>
 <td>m</td>
-<td>NA</td>
-<td></td>
-<td></td>
+<td>basin mean</td>
+<td>CONUS Soils</td>
+<td>basin mean</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>soils</td>
 <td>soil_porosity</td>
 <td>volumetric porosity</td>
 <td>Miller and White (1998) – STATSGO</td>
 <td>-</td>
-<td>volumetric porosity (saturated volumetric water content estimated
-using a multiple linear regression based on sand and clay fraction for
-the layers marked as USDA soil texture class and a default value (0.9)
-for layers marked as organic material; layers marked as water, bedrock,
-and “other” were excluded) - Table 4 in Cosby etal. (1984); Lawrence and
-Slater (2008)</td>
-<td></td>
+<td>basin mean - volumetric porosity (saturated volumetric water content
+estimated using a multiple linear regression based on sand and clay
+fraction for the layers marked as USDA soil texture class and a default
+value (0.9) for layers marked as organic material; layers marked as
+water, bedrock, and “other” were excluded) - Table 4 in Cosby etal.
+(1984); Lawrence and Slater (2008)</td>
+<td>CONUS Soils</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>soils</td>
 <td>soil_conductivity</td>
 <td>saturated hydraulic conductivity</td>
 <td>Miller and White (1998) – STATSGO</td>
 <td>cm/h</td>
-<td>estimated using a multiple linear regression based on sand and clay
-fraction for the layers marked as USDA soil texture class and a default
-value (36 cm h) Table 4 in Cosby etal. (1984); Lawrence and Slater
-(2008)</td>
-<td></td>
+<td>basin mean - estimated using a multiple linear regression based on
+sand and clay fraction for the layers marked as USDA soil texture class
+and a default value (36 cm h) Table 4 in Cosby etal. (1984); Lawrence
+and Slater (2008)</td>
+<td>CONUS Soils</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>soils</td>
 <td>max_water_content</td>
 <td>maximum water content</td>
 <td>Miller and White (1998) – STATSGO</td>
 <td>%</td>
-<td>combination of porosity and soil_depth_statsgo; layers marked as
-water, bedrock, and “other” were excluded</td>
+<td>basin mean - combination of porosity and soil_depth_statsgo; layers
+marked as water, bedrock, and “other” were excluded</td>
 <td>CONUS Soils</td>
-<td></td>
+<td>basin mean</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>soils</td>
 <td>sand_frac</td>
 <td>sand fraction</td>
 <td>Miller and White (1998) – STATSGO</td>
 <td>%</td>
-<td>of the soil material smaller than 2 mm;layers marked as organic
-material, water, bedrock, and “other” were excluded</td>
+<td>basin mean - % of soil material smaller than 2 mm;layers marked as
+organic material, water, bedrock, and “other” were excluded</td>
 <td>CONUS Soils</td>
-<td></td>
+<td>basin mean</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>soils</td>
 <td>clay_frac</td>
 <td>clay fraction</td>
 <td>Miller and White (1998) – STATSGO</td>
 <td>%</td>
-<td>of the soil material smaller than 2 mm; layers marked as organic
-material, water, bedrock, and “other” were excluded</td>
+<td>basin mean - % of soil material smaller than 2 mm; layers marked as
+organic material, water, bedrock, and “other” were excluded</td>
 <td>CONUS Soils</td>
-<td></td>
+<td>basin mean</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>soils</td>
 <td>water_frac</td>
 <td>fraction of the top 1.5 m marked as water (class 14)</td>
 <td>Miller and White (1998) – STATSGO</td>
 <td>%</td>
-<td>NA</td>
+<td>basin mean</td>
 <td>CONUS Soils</td>
-<td></td>
+<td>basin mean</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>soils</td>
 <td>organic_frac</td>
 <td>fraction of soil_depth_statsgo marked as organic material (class
 13)</td>
 <td>Miller and White (1998) – STATSGO</td>
 <td>%</td>
-<td>NA</td>
+<td>basin mean</td>
 <td>CONUS Soils</td>
-<td></td>
+<td>basin mean</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>soils</td>
 <td>other_frac</td>
 <td>fraction of soil_depth_statsgo marked as “other” (class 16)</td>
 <td>Miller and White (1998) – STATSGO</td>
 <td>%</td>
-<td>NA</td>
+<td>basin mean</td>
 <td>CONUS Soils</td>
-<td></td>
+<td>basin mean</td>
 </tr>
-<tr class="even">
+</tbody>
+</table>
+</div>
+<div id="terrain" class="section level2">
+<h2>Terrain</h2>
+<table>
+<colgroup>
+<col width="2%" />
+<col width="4%" />
+<col width="20%" />
+<col width="16%" />
+<col width="1%" />
+<col width="33%" />
+<col width="14%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Class</th>
+<th>Variable</th>
+<th>Data Description</th>
+<th>Data Source</th>
+<th>units</th>
+<th>Summary Function Description</th>
+<th>Proposed Source</th>
+<th>Proposed Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
 <td>terrain</td>
 <td>area</td>
 <td>catchment area</td>
-<td></td>
+<td>DEM</td>
 <td>sq.km</td>
-<td>NA</td>
-<td></td>
-<td></td>
+<td>basin sum</td>
+<td>3DEP 30-m</td>
+<td>basin sum</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>terrain</td>
 <td>slope_mean</td>
 <td>catchment mean slope</td>
-<td></td>
+<td>DEM</td>
 <td>m/km</td>
-<td>NA</td>
-<td></td>
-<td></td>
+<td>basin mean</td>
+<td>3DEP 30-m</td>
+<td>basin mean</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>terrain</td>
 <td>elev_mean</td>
 <td>catchment mean elevation</td>
 <td>DEM</td>
 <td>m</td>
-<td>NA</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>landcover</td>
-<td>frac_forest</td>
-<td>forest fraction</td>
-<td>N15 – USGS data (NLCD ####)</td>
-<td>%</td>
-<td>NA</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>landcover</td>
-<td>dom_land_cover</td>
-<td>dominant land cover (Noah-modified 20-category IGBP-MODIS land
-cover)</td>
-<td>MODIS*</td>
-<td>-</td>
-<td>NA</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>landcover</td>
-<td>dom_land_cover_frac</td>
-<td>fraction of the catchment area associated with the dominant land
-cover</td>
-<td>MODIS*</td>
-<td>%</td>
-<td>NA</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>landcover</td>
-<td>lai_max</td>
-<td>maximum monthly mean of the leaf area index</td>
-<td>MODIS 1k 2002-2014</td>
-<td>-</td>
-<td>remap noah tbl to mod LC, mean of max - based on 12 monthly
-means</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>landcover</td>
-<td>lai_diff</td>
-<td>difference between the maximum and minimum monthly mean of the leaf
-area index</td>
-<td></td>
-<td>-</td>
-<td>based on 12 monthly means</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>landcover</td>
-<td>gvf_max</td>
-<td>maximum monthly mean of the green vegetation fraction</td>
-<td></td>
-<td>-</td>
-<td>based on 12 monthly means</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>landcover</td>
-<td>gvf_diff</td>
-<td>difference between the maximum and minimum monthly mean of the green
-vegetation fraction</td>
-<td></td>
-<td>-</td>
-<td>based on 12 monthly means</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>landcover</td>
-<td>root_depth_XX</td>
-<td>root depth percentiles (XX = 50 and 99%)</td>
-<td>IGBP landcover</td>
-<td>m</td>
-<td>remap noah tbl to mod LC - Eq. (2) and Table 2 in Zeng (2001), basin
-mean</td>
-<td></td>
-<td></td>
+<td>basin mean</td>
+<td>3DEP 30-m</td>
+<td>basin mean</td>
 </tr>
 </tbody>
 </table>
-<p>======= | Class | Variable | Data Description | Data Source | Summary
-Function Description | Proposed Source | Proposed Summary |
-|————-|———————-|———————————————————————————————————————————–|———————————————————————-|————————————|—————————————————————-|———————————|
-| identifier | gauge_id | catchment identifier (eight-digit USGS
-hydrologic unit code) | HDCN-2009 | NA | Reference Fabric POIs | NA | |
-identifier | HUC2 | region (two-digit USGS hydrologic unit code) |
-NHDPlusV2/WBD | NA | Reference Fabric VPUs | VPU | | identifier |
-gauge_name | gauge name, followed by the state | HDCN-2009 | NA |
-Mainstem ID | NA | | identifier | gauge_lat | gauge latitude | HDCN-2009
-| NA | Outlet X | NA | | identifier | gauge_long | gauge longitude |
-HDCN-2009 | NA | Outlet Y | NA | | climatology | p_mean | mean daily
-precipitation (mm/day) | N15 Daymet 1km Daily October 1989 to 30
-September 2009 | basin mean | Gridmet 4km PR | basin mean |<br />
-| climatology | pet_mean | mean daily PET | N15 using Priestley–Taylor
-formulation calibrated for each catchment | basin mean | Gridmet 4km PET
-| basin mean | | climatology | p_seasonality | seasonality and timing of
-precipitation (estimated using sine curves to represent the annual
-temperature and precipitation cycles)| N15 Daymet 1km Daily | Eq. (14)
-in Woods et al. (2009) | | Eq. (14) in Woods et al. (2009) | |
-climatology | frac_snow | fraction of precipitation falling as snow
-(i.e., on days colder than 0) | N15 Daymet 1km Daily | basin mean |
-Gridmet 4km PR / Jennings | basin mean | | climatology | aridity |
-aridity (ratio of mean PET to mean precipitation) | N15 Daymet 1km Daily
-[<code>pet_mean</code>/<code>p_mean</code>] | basin mean | Gridmet 4km
-Daily | basin mean | | climatology | high_prec_freq | frequency of high
-precipitation days (greater or equal to 5 times mean daily PPT); days/yr
-| N15 Daymet 1km Daily | basin mean | Gridmet 4km Daily | basin mean | |
-climatology | high_prec_dur | average duration of high precipitation
-days (greater or equal to 5 times mean daily PPT); days | N15 Daymet 1km
-Daily | basin mean | Gridmet 4km Daily | basin mean | | climatology |
-high_prec_timing | season during which most high precipitation days
-(greater or equal to 5 times mean daily PPT); season | N15 Daymet 1km
-Daily | basin mean | Gridmet 4km Daily | basin mean | | climatology |
-low_prec_freq | frequency of low precipitation days (less them 1 mm
-daily PPT); days/yr | N15 Daymet 1km Daily | basin mean | Gridmet 4km
-Daily | basin mean | | climatology | low_prec_dur | average duration of
-low precipitation days (less them 1 mm daily PPT); days | N15 Daymet 1km
-Daily | basin mean | Gridmet 4km Daily | basin mean | | climatology |
-low_prec_timing | season during which most low precipitation days (less
-them 1 mm daily PPT); season | N15 Daymet 1km Daily
-[<code>pet_mean</code>/<code>p_mean</code>] | basin mean | Gridmet 4km
-Daily | basin mean | | geology | geol_1st_class |most common geologic
-class in the catchment|Hartmann and Moosdorf (2012)|GLiM||| | geology |
-glim_1st_class_frac |fraction of the catchment area associated with its
-most common geologic class|Hartmann and Moosdorf (2012)|GLiM||| |
-geology | geol_2nd_class |second most common geologic class in the
-catchment|Hartmann and Moosdorf (2012)|GLiM||| | geology |
-glim_2nd_class_frac |fraction of the catchment area associated with its
-second most common geologic class|Hartmann and Moosdorf (2012)|GLiM||| |
-geology | carbonate_rocks_frac |fraction of the catchment area
-characterized as “carbonate sedimentary rocks”|Hartmann and Moosdorf
-(2012)|GLiM||| | geology | geol_porostiy |subsurface porosity|Gleeson et
-al. (2014)|GLHYMPS||| | geology | geol_permeability |subsurface
-permeability (log10)|Gleeson et al. (2014)|GLHYMPS||| | soils |
-soil_depth_pelletier | depth to bedrock (maximum 50 m) | Pelletier et
-al. (2016) |||| | soils | soil_depth_statsgo | soil depth (maximum 1.5
-m; layers marked as water and bedrock were excluded) | Miller and White
-(1998) – STATSGO<em>|||| | soils | soil_porosity | volumetric porosity
-(saturated volumetric water content estimated using a multiple linear
-regression based on sand and clay fraction for the layers marked as USDA
-soil texture class and a default value (0.9) for layers marked as
-organic material; layers marked as water, bedrock, and “other” were
-excluded) | Miller and White (1998) – STATSGO | Table 4 in Cosby etal.
-(1984); Lawrence and Slater (2008)||| | soils | soil_conductivity |
-saturated hydraulic conductivity (estimated using a multiple linear
-regression based on sand and clay fraction for the layers marked as USDA
-soil texture class and a default value (36 cm h) | Miller and White
-(1998) – STATSGO | Table 4 in Cosby etal. (1984); Lawrence and Slater
-(2008)||| | soils | max_water_content | maximum water content
-(combination of porosity and soil_depth_statsgo; layers marked as water,
-bedrock, and “other” were excluded) | Miller and White (1998) – STATSGO
-|||| | soils | sand_frac | sand fraction (of the soil material smaller
-than 2 mm;layers marked as organic material, water, bedrock, and “other”
-were excluded) | Miller and White (1998) – STATSGO |||| | soils |
-silt_frac | silt fraction (of the soil material smaller than 2 mm;layers
-marked as organic material, water, bedrock, and “other” were excluded) |
-Miller and White (1998) – STATSGO |||| | soils | clay_frac | clay
-fraction (of the soil material smaller than 2 mm; layers marked as
-organic material, water, bedrock, and “other” were excluded) | Miller
-and White (1998) – STATSGO |||| | soils | water_frac | fraction of the
-top 1.5 m marked as water (class 14) ||||| | soils | organic_frac |
-fraction of soil_depth_statsgo marked as organic material (class 13)
-||||| | soils | other_frac | fraction of soil_depth_statsgo marked as
-“other” (class 16)||||| | terrain | area | ||||| | terrain | slope_mean
-| catchment mean slope ||||| | terrain | elev_mean | catchment mean
-elevation||||| | landcover | frac_forest | forest fraction | N15 – USGS
-data |||| | landcover | dom_land_cover | dominant land cover
-(Noah-modified 20-category IGBP-MODIS land cover) | MODIS</em>|||| |
-landcover | dom_land_cover_frac | fraction of the catchment area
-associated with the dominant land cover | MODIS<em>|||| | landcover |
-lai_max | maximum monthly mean of the leaf area index (based on 12
-monthly means) |||| | landcover | lai_diff | difference between the
-maximum and minimum monthly mean of the leaf area index (based on 12
-monthly means)||||| | landcover | gvf_max | maximum monthly mean of the
-green vegetation frac tion (based on 12 monthly means) ||||| | landcover
-| gvf_diff | difference between the maximum and minimum monthly mean of
-the green vegetation fraction (based on 12 monthly means)||||| |
-landcover | root_depth_XX | root depth percentiles (XX = 50 and 99%) |
-Root depth extracted from a root depth distribution based on IGBP
-landcover) MODIS</em> Eq. (2) and Table 2 in Zeng (2001)</p>
+<p>=== ## Landcover | Class | Variable | Data Description | Data Source
+| units | Summary Function Description | Proposed Source | Proposed
+Summary |
+|————-|———————-|———————————————————————————————|————————————————————————–|———|———————————————————————————————————————————————————|—————————————————————-|—————————-|
+| landcover | frac_forest | forest fraction | N15 – USGS data (NLCD
+####) | % | basin mean | NLCD 2019 | basin mean | | landcover |
+dom_land_cover | dominant land cover (Noah-modified 20-category
+IGBP-MODIS land cover) | MODIS* | - | basin mode | IGBP-MODIS land cover
+| basin mode | | landcover | dom_land_cover_frac | fraction of the
+catchment area associated with the dominant land cover | MODIS* | % |
+basin mean | IGBP-MODIS land cover | basin mode | | landcover | lai_max
+| maximum monthly mean of the leaf area index | MODIS 1k 2002-2014 | - |
+remap noah tbl to mod LC, mean of max - based on 12 monthly means |
+GLASS | basin mean | | landcover | lai_diff | difference between the
+maximum and minimum monthly mean of the leaf area index | MODIS* | - |
+based on 12 monthly means | GLASS | basin mean | | landcover | gvf_max |
+maximum monthly mean of the green vegetation fraction | MODIS* | - |
+based on 12 monthly means | GLASS | basin mean | | landcover | gvf_diff
+| difference between the maximum and minimum monthly mean of the green
+vegetation fraction | MODIS* | - | based on 12 monthly means | GLASS |
+basin mean | | landcover | root_depth_XX | root depth percentiles (XX =
+50 and 99%) | IGBP landcover | m | remap noah tbl to mod LC - Eq. (2)
+and Table 2 in Zeng (2001), basin mean | GLASS | basin mean</p>
+</div>
+</div>
 
 
 
